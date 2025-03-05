@@ -1,5 +1,5 @@
 class Book:
-    """Represents a book in the bookstore."""
+    # Represents a book in the bookstore.
     
     def __init__(self, title, author, isbn, genre, price, quantity):
         self.title = title
@@ -10,7 +10,7 @@ class Book:
         self.quantity = quantity
 
     def to_dict(self):
-        """Converts the Book object into a dictionary format for storage."""
+        # Converts the Book object into a dictionary format for storage.
         return {
             "title": self.title,
             "author": self.author,
@@ -22,7 +22,7 @@ class Book:
 
     @staticmethod
     def from_dict(book_dict):
-        """Creates a Book object from a dictionary."""
+        # Creates a Book object from a dictionary.
         return Book(
             book_dict["title"],
             book_dict["author"],

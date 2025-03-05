@@ -4,9 +4,9 @@ from search_book import search_book
 from delete_book import remove_book
 
 def main_menu():
-    """Displays the main menu and handles user choices."""
+    # Displays the main menu and handles user choices.
     while True:
-        print("\n📚 Book Store Management System")
+        print("Book Store Management System")
         print("=" * 40)
         print("1️⃣ Add a Book")
         print("2️⃣ View All Books")
@@ -14,7 +14,7 @@ def main_menu():
         print("4️⃣ Remove a Book")
         print("5️⃣ Exit")
         
-        choice = input("Enter your choice (1-5): ").strip()
+        choice = input("Enter your choice (1-5): ")
 
         if choice == "1":
             add_book()
@@ -25,10 +25,10 @@ def main_menu():
         elif choice == "4":
             remove_book()
         elif choice == "5":
-            print("📌 Exiting the system... Goodbye!")
+            print("Exiting the system...Goodbye!")
             break
         else:
-            print("❌ Invalid choice. Please enter a number between 1 and 5.")
+            print("Invalid choice. Please enter a number between 1 and 5.")
 
 if __name__ == "__main__":
     main_menu()
